@@ -9,7 +9,9 @@ Task Completion Status
 ##Run Locally
 Clone the project
 
-  git clone 
+git clone https://github.com/Harendrasingh1/To-Do-App.git
+
+
 Install dependencies
 
 pip install -r requirements.txt
