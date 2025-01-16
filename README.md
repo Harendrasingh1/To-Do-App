@@ -13,9 +13,9 @@ Clone the project
 Install dependencies
 
   pip install -r requirements.txt
-##Start the server
+  ##Start the server
 **python manage.py migrate**
-**python manage.py runserver**
+  **python manage.py runserver**
 It will run the application on http://127.0.0.1:8000/
 
 Now the application is ready to use
