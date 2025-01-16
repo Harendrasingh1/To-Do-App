@@ -26,5 +26,14 @@ python manage.py runserver
 
 It will run the application on http://127.0.0.1:8000/
 
+## Code Review
+
+Your contribution will be reviewed by the project maintainers. Be prepared to address any feedback or suggestions to ensure the quality and compatibility of your changes.
+
+## Thank You!
+
+Thank you for considering contributing to the TO-DO-APP Project. Your efforts help make this project better for everyone. If you have any questions or need assistance, feel free to reach out through the issue tracker or discussions. 
+Happy coding🤩!
+
 Now the application is ready to use
 Open your browser and go to http://127.0.0.1:8000/
