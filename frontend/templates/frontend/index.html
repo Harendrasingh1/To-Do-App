@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #2ef9f9; 
+            background-image: linear-gradient(90deg, #38e7ff 0%, #3571ba 50%, #d250f7 100%);
+        }
+        .main{
+            width: 40rem;
+            background-color: white;
+            margin: 2rem auto;
+            padding: 1rem; 
+            border-radius: 0.5rem;
+        }
+        .underline{
+            text-decoration: underline;
+            text-underline-offset: 0.3em;
+            margin-bottom: 1em;
+        }
+        .input-group input{
+            border: 0.08em solid black;
+        }
+        .input-group button{
+            background-color: #2bf016;
+        }
+        .all-tasks{
+            max-height: 20em;
+            overflow-y: scroll;
+            border-top: 0.1em solid black;
+            padding: 0.5em 0;
+        }
+        .all-tasks::-webkit-scrollbar{
+            width: 0.5rem;
+            background-color: black;
+        }
+        .all-tasks::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .all-tasks::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 0.5em;
+        }
+        .task{
+            margin: 1rem 0;
+            border-bottom: 0.01em solid rgb(139, 134, 134);
+        }
+        .task p{
+            width: 30em;
+            word-wrap: break-word;
+        }
+        .task-options{
+            padding: 0.5em;
+        }
+        .checkbox{
+            height: 1.3em;
+            width: 1.3em;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 0.05em solid;
+            vertical-align: middle;
+        }
+        .checkbox:checked{
+            accent-color: green;
+        }
+        @media screen and (max-width:650px) {
+            .main{
+                width: auto;
+                margin: 2rem 0.5rem;
+            }
+            .all-tasks{
+                max-height: 26em;
+            }
+            .task p{
+                width: 13em;
+            }
+        }
+        @media screen and (max-width:384px) {
+            .task p{
+                width: 11em;
+            }
+        }
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        .social-links {
+            margin-top: 0.5rem;
+        }
+        .social-links a {
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+        .social-icon {
+            width: 24px;
+            height: 24px;
+        }
+        
+  footer {
+    background-color: #50a0b9;
+    color: #c92626;
+    padding: 0.6rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-links {
+    margin-top: 0.5rem;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 0.5rem;
+    vertical-align: middle;
+  }
+  
+  .social-icon:hover {
+    opacity: 1.2;
+  }
+    </style>
+</head>
+<body>
+    <h1 class="text-center underline my-2" style="color: white;">To-Do App</h1>
+    <div class="main">
+
+        <form action="" method="post" id="form">
+            {% csrf_token %}
+            <div class="input-group my-3 mb-4">
+                <input type="text" class="form-control" placeholder="Add Task (Max. 500 Characters)" aria-label="Recipient's username" aria-describedby="button-addon2" id="title">
+                <button class="btn btn-info" type="submit" id="button-addon2">Add Task</button>
+            </div>
+        </form>
+
+        <div class="all-tasks" id="allTasks">
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Made by Harendra Singh</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/harendra8587/" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn" class="social-icon" />
+                </a>
+                <a href="https://www.instagram.com/harendra.singh_1/" target="_blank">
+                    <img src="instagram.png" alt="Instagram" class="social-icon" />
+                </a>
+                <a href="https://github.com/Harendrasingh1" target="_blank">
+                    <img src="github.png" alt="GitHub" class="social-icon" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script>
+        // JavaScript code for task functionality here
+    </script>
+</body>
+</html>
