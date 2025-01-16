@@ -2,13 +2,13 @@
 ![Screenshot 2025-01-16 221100](https://github.com/user-attachments/assets/d5db2d8f-df02-4bef-bc43-63dc63a8fbf0)
 
 This is a To-Do web application built using Django and Django REST Framework, this application works asynchronously  Topics javascript css python html bootstrap django django-rest-framework fetch-api to-do-app asynchrounous
-##Features
+## Features
 Creating Task
 Updating Task
 Deleting Task
 Task Completion Status
 
-##Run Locally
+## Run Locally
 Clone the project
 
 git clone https://github.com/Harendrasingh1/To-Do-App.git
